@@ -1,0 +1,50 @@
+@import '../../constants/constants.scss';
+
+.introduction {
+  @extend %bg;
+  height: 790px;
+  background: url('../../assets/Introduction-bg.jpg');
+  background-position: 153px 45px;
+  background-repeat: no-repeat;
+}
+
+.introduction-content {
+  display: flex;
+  max-width: 1142px;
+  margin: auto;
+  padding-top: 143px;
+  padding-right: 45px;
+}
+
+h1 {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: -0.02em;
+    & .colored-header {
+      color: $header-color;
+    }
+}
+
+.introduction-info {
+  width: 64%;
+  margin-top: 15px;
+}
+
+.introduction-text {
+  max-width: 586px;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: $text-light;
+}
+
+.introduction-image {
+  width: 415px;
+  height: 647px;
+  background-image: url('../../assets/Mobile_phone_in_hand.png');
+}

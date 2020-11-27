@@ -1,0 +1,26 @@
+@import '../../constants/constants.scss';
+
+.description {
+  @extend %bg;
+  height: 454px;
+  background: url('../../assets/Description-bg.jpg');
+  background-repeat: no-repeat;
+}
+
+.description-content {
+  margin: auto;
+  padding-top: 117px;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-text {
+  max-width: 855px;
+  padding-top: 47px;
+  padding-right: 42px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: $text-white;
+}
