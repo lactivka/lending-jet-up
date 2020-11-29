@@ -1,0 +1,73 @@
+@import '../../constants/constants.scss';
+
+.opportunities {
+  @extend %bg;
+  height: 950px;
+  background: url('../../assets/images/Opportunities-bg.jpg');
+}
+
+.opportunities-content {
+  margin: auto;
+  padding-top: 159px;
+  max-width: 1187px;
+    h2 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      color: $h2-color;
+    }
+}
+
+.opportunities-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 127px;
+  max-width: 1185px;
+  & .opportunities-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 108px;
+    width: 320px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: $text-theme-contrast;
+  }
+  & .descript {
+    width: 280px;
+  }
+}
+
+.opportunities-icon {
+  margin-bottom: 27px;
+  width: 65px;
+  height: 65px;
+  &.expand {
+    width: 53px;
+    height: 53px;
+    margin: 5px 5px 53px;
+    background: url('../../assets/icons/expand.png') no-repeat;
+  }
+  &.step {
+    margin-bottom: 46px;
+    background: url('../../assets/icons/step.png') no-repeat;
+  }
+  &.jigsaw {
+    margin-bottom: 46px;
+    background: url('../../assets/icons/jigsaw.png') no-repeat;
+  }
+  &.growUp {
+    margin-left: 2px;
+    background: url('../../assets/icons/growUp.png') no-repeat;
+  }
+  &.steeringWheel {
+    background: url('../../assets/icons/steeringWheel.png') no-repeat;
+  }
+  &.dependable {
+    background: url('../../assets/icons/dependable.png') no-repeat;
+  }
+}

@@ -1,9 +1,18 @@
-$header-color: #F35050;
-$text-light: #9E9E9E;
-$text-white: #ffffff;
+$h1-color: #F35050;
+$h2-color: #F73259;
+$user-name-color: #757575;
+$user-position-color:  #ACACAC;
+$text-introduction: #9E9E9E;
+$text-sanctions: #828282;
+$text-theme-contrast: #9A9A9A;
+$text-theme-light: #ffffff;
+$bullet-color: #B1B1B1;
+$bullet-color-active: #ED3350;
 
 %bg {
-    width: 100%;
-    max-width: 1920px;
-    margin: auto;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  background-repeat: no-repeat;
 }
+

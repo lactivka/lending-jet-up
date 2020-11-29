@@ -1,0 +1,40 @@
+@import '../../constants/constants';
+
+.sanctions {
+  @extend %bg;
+  height: 962px;
+}
+
+.sanctions-content {
+  margin: auto;
+  padding-top: 67px;
+  max-width: 1318px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: $text-theme-contrast;
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    letter-spacing: -0.015em;
+    color: $text-sanctions;
+  }
+}
+
+.sanctions-description {
+  max-width: 577px;
+  padding: 143px 0 0 77px;
+  & .description-part1 {
+    padding: 65px 0 35px 0;
+  }
+}
+
+.sanctions-image {
+  width: 547px;
+  height: 895px;
+  background: url('../../assets/images/Mobile_group.png') no-repeat;
+}

@@ -1,0 +1,96 @@
+@import '../../constants/constants';
+
+.motivation {
+  @extend %bg;
+  height: 1262px;
+  background: linear-gradient(256.4deg, #E84B28 0.75%, #F92F60 87.48%);
+  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.motivation-content {
+  margin: auto;
+  max-width: 1208px;
+  color: $text-theme-light;
+  h2 {
+    margin: 0;
+    padding: 158px 0 2px 12px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+  }
+  & .motivation-description {
+    max-width: 595px;
+    padding-left: 11px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.motivation-info {
+  display: flex;
+  padding-top: 41px;
+}
+
+.motivation-image {
+  margin-left: 7px;
+}
+
+.motivation-list {
+  padding-top: 34px;
+  margin-left: -27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 737px;
+  max-height: 768px;
+}
+
+.motivation-item {
+  // height: 300px;
+  h3 {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+  & .item-header {
+    display: flex;
+  }
+  & .descript {
+    max-width: 341px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.motivation-icon {
+  width: 83px;
+  height: 75px;
+  margin-right: 14px;
+  &.personalCoach {
+    background: url('../../assets/icons/personalCoach.png') no-repeat;
+  }
+  &.vacation {
+    margin: 0;
+    background: url('../../assets/icons/vacation.png') no-repeat;
+  }
+  &.personalMap {
+    background: url('../../assets/icons/personalMap.png') no-repeat;
+  }
+  &.refereeSanctioning {
+    margin-right: 4px;
+    background: url('../../assets/icons/refereeSanctioning.png') no-repeat;
+    background-position: 0 -9px;
+  }
+  &.barChart {
+    background: url('../../assets/icons/barChart.png') no-repeat;
+  }
+  &.notification {
+    margin: 0;
+    background: url('../../assets/icons/notification.png') no-repeat;
+  }
+}

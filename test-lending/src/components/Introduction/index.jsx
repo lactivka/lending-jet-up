@@ -1,5 +1,5 @@
 import './index.scss';
-import logo from '../../assets/Logo-red.svg';
+import logo from '../../assets/images/Logo-red.svg';
 import Button from '../Button/index';
 import { introduction } from '../../constants/content';
 

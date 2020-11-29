@@ -1,5 +1,5 @@
 import './index.scss';
-import logo from '../../assets/Logo-white.svg';
+import logo from '../../assets/images/Logo-white.svg';
 import { description } from '../../constants/content';
 
 function Description() {
