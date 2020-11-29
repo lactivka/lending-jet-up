@@ -1,0 +1,37 @@
+@import '../../constants/constants';
+
+.download {
+  @extend %bg;
+  height: 470px;
+  background: url('../../assets/images/Download-bg.jpg');
+}
+
+.download-content {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1257px;
+}
+
+.download-image {
+  margin: -233px 0px 0 -58px;
+}
+
+.download-info {
+  padding-top: 104px;
+  display: flex;
+  flex-direction: column;
+  max-width: 719px;
+  h3 {
+    padding-left: 7px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+    letter-spacing: -0.02em;
+    color: $text-theme-light;
+  }
+  & .download-buttons {
+    display: flex;
+    padding-top: 49px;
+  }
+}

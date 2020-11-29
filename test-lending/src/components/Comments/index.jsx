@@ -19,7 +19,7 @@ function Comments() {
     setHoveredIcon(event.target.id);
   }
 
-  const onLeave = (event) => {
+  const onLeave = () => {
     setHoveredIcon(null);
   }
 
@@ -53,7 +53,7 @@ function Comments() {
                   onMouseOut={onLeave}
                 />
                 <VK
-                  className={`social-icon ${hoveredIcon === 'vk' ? 'hovered' : null}`}
+                  className={`social-icon vk ${hoveredIcon === 'vk' ? 'hovered' : null}`}
                   id="vk"
                   onMouseOver={onHover}
                   onMouseOut={onLeave}

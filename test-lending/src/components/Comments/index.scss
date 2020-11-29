@@ -38,7 +38,7 @@
 .user-data {
   display: flex;
   & .user-photo {
-    margin: 15px 39px 0 2px;
+    margin: 15px 38px 0 2px;
     border-radius: 50%;
   }
   & .user-name {
@@ -50,7 +50,7 @@
     color: $user-name-color;
   }
   & .user-position {
-    margin: 11px auto 18px auto;
+    margin: 11px auto 18px 1px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -69,6 +69,9 @@
   width: 14px;
   height: 14px;
   cursor: pointer;
+  &.vk {
+    width: 18px;
+  }
 }
 
 .hovered path {

@@ -1,0 +1,60 @@
+@import '../../constants/constants';
+
+.footer {
+  @extend %bg;
+  height: 320px;
+}
+
+.footer-content {
+  margin: auto;
+  padding: 132px 0 0 19px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1202px;
+}
+
+.footer-social {
+  p {
+    padding-left: 7px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: $text-sanctions;
+  }
+  & .social-icons {
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+  }
+  & svg.social-icon {
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    &.vk {
+      width: 27px;
+    }
+  }
+}
+
+.footer-address {
+  width: 216px;
+  padding-top: 40px;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: end;
+  color: $text-sanctions;
+  p {
+    margin: 0;
+  }
+}
+
+.placeholder {
+  padding: 3px 0 0 11px;
+  width: 30px;
+  height: 30px;
+}
