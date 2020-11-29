@@ -68,27 +68,11 @@
 .social-icon {
   width: 14px;
   height: 14px;
-  &.facebook {
-    cursor: pointer;
-    background: url('../../assets/icons/facebook.png') no-repeat;
-    background-size: contain;
-  }
-  &.instagram {
-    cursor: pointer;
-    background: url('../../assets/icons/instagram.png') no-repeat;
-    background-size: contain;
-  }
-  &.twitter {
-    cursor: pointer;
-    background: url('../../assets/icons/twitter_grey.png') no-repeat;
-    background-size: contain;
-  }
-  &.vk {
-    width: 20px;
-    cursor: pointer;
-    background: url('../../assets/icons/vk.png') no-repeat;
-    background-size: cover;
-  }
+  cursor: pointer;
+}
+
+.hovered path {
+  fill: $hovered-element;
 }
 
 .comment-text {
