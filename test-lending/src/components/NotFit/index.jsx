@@ -8,9 +8,9 @@ function NotFit() {
         <div className="notFit-info">
           <h2>{notFit.title}</h2>
           <ul className="notFit-list">
-            {notFit.list.map(item => {
+            {notFit.list.map((item, index) => {
               return (
-                <li className="notFit-item">{item}</li>
+                <li className="notFit-item" key={`item-${index}`}>{item}</li>
               )
             })}
           </ul>

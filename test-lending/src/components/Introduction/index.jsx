@@ -16,7 +16,7 @@ function Introduction() {
             <span>{introduction.h1.end}</span>
           </h1>
           <p className="introduction-text">{introduction.text}</p>
-          <Button></Button>
+          <Button text={introduction.button} />
         </div>
         <div className="introduction-image"></div>
       </div>

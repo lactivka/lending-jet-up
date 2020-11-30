@@ -1,8 +1,8 @@
 import './index.scss';
 
-function Button() {
+function Button({ text, action }) {
     return (
-        <button className="button">Скачать</button>
+      <button className="button" onClick={action}>{text}</button>
     )
 }
 
