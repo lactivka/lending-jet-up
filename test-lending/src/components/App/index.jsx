@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+// import { popup } from '../../constants/content';
 import Comments from '../Comments';
 import Description from '../Description';
 import Download from '../Download';
@@ -17,6 +18,9 @@ const ESCAPE = 'Escape';
 
 function App() {
   const [isPopup, setIsPopup] = useState(false);
+  // const [timer, setTimer] = useState([
+  //   popup.time.daysNumber, popup.time.hoursNumber,
+  //   popup.time.minutesNumber, popup.time.secondsNumber]);
 
   const closePopup = () => {
     setIsPopup(false);
@@ -28,11 +32,17 @@ function App() {
     }
   }
 
+;
+
   useEffect(() => {
     setTimeout(() => {
       setIsPopup(true);
+    //   setInterval(() => {
+    //   setTimer([timer[0], timer[1], timer[2], timer[3] - 1])
+    // });
     }, TIME_TO_SHOW_POPUP);
-  }, [])
+
+  })
 
   useEffect(() => {
     document.addEventListener('keydown', keyPressHandler)

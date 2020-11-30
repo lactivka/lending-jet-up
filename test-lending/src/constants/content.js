@@ -106,7 +106,11 @@ export const popup = {
     hours: 'Часов',
     minutes: 'Минут',
     seconds: 'Секунд',
-    divider: ':'
+    divider: ':',
+    daysNumber: 15,
+    hoursNumber: 7,
+    minutesNumber: 45,
+    secondsNumber: 12,
   },
   text: {
     part1: 'Мы делаем для вас лучшее приложение! Оставьте свой емейл и мы оповестим вас как только приложение будет запущено, а также ',

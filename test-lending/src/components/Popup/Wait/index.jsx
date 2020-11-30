@@ -1,6 +1,7 @@
 import { popup } from '../../../constants/content';
 import '../index.scss';
 import close from '../../../assets/icons/close.png';import Form from '../../Form';
+import Timer from '../Timer';
 ;
 
 function Wait({ send, closePopup }) {
@@ -19,27 +20,7 @@ function Wait({ send, closePopup }) {
           <br />
           <span className="popup-title-colored">{popup.title.part2}</span>
         </p>
-        <div className="time-block ">
-          <div className="time-part days">
-            <div className="time-number">15</div>
-            <div className="time-text">{popup.time.days}</div>
-          </div>
-          <div className="time-divider">{popup.time.divider}</div>
-          <div className="time-part hours">
-            <div className="time-number">07</div>
-            <div className="time-text">{popup.time.hours}</div>
-          </div>
-          <div className="time-divider">{popup.time.divider}</div>
-          <div className="time-part minutes">
-            <div className="time-number">45</div>
-            <div className="time-text">{popup.time.minutes}</div>
-          </div>
-          <div className="time-divider">{popup.time.divider}</div>
-          <div className="time-part seconds">
-            <div className="time-number">12</div>
-            <div className="time-text">{popup.time.seconds}</div>
-          </div>
-        </div>
+        <Timer />
         <div className="popup-text">
           <span>{popup.text.part1}</span>
           <span className="popup-text-colored">{popup.text.part2}</span>
