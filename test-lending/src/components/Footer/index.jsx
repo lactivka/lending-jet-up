@@ -52,7 +52,7 @@ function Footer() {
         </div>
         <div className="footer-address">
           <div className="address-info">
-            <p>{footer.city}</p>
+            <p className="footer-city">{footer.city}</p>
             <p>{footer.address}</p>
           </div>
           <img src={placeholder} alt="Placeholder" className="placeholder" />
