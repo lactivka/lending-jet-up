@@ -45,3 +45,38 @@
   height: 288px;
   background: url('../../assets/images/Lazy.png') no-repeat;
 }
+
+@media(max-width: 376px) {
+  .notFit {
+    height: auto;
+    background: url('../../assets/images/NotFit-bg-mobile.jpg') no-repeat;
+  }
+
+  .notFit-content {
+    padding: 44px 0 0 0;
+    flex-wrap: wrap;
+    h2 {
+      padding: 0 0 0 21px;
+      font-size: 28px;
+      line-height: 37px;
+    }
+  }
+
+  .notFit-info {
+    ul {
+      padding-top: 0;
+      li {
+        margin-top: 31px;
+        padding-right: 26px;
+        padding-top: 3px;
+      }
+    }
+  }
+
+  .notFit-image {
+    width: 333px;
+    height: 202px;
+    margin: 47px 0 0 23px;
+    background-size: contain;
+  }
+}

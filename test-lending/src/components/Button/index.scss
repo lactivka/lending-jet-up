@@ -17,3 +17,11 @@
     letter-spacing: -0.02em;
     cursor: pointer;
 }
+
+@media (max-width: 376px) {
+  .button {
+    margin: 286px auto 0;
+    width: 334px;
+    font-size: 15px;
+  }
+}

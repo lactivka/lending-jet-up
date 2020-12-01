@@ -38,3 +38,45 @@
   height: 895px;
   background: url('../../assets/images/Mobile_group.png') no-repeat;
 }
+
+.sanctions-image-mobile {
+  display: none;
+}
+
+@media(max-width: 376px) {
+  .sanctions {
+    height: auto;
+  }
+
+  .sanctions-content {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .sanctions-image {
+    display: none;
+  }
+
+  .sanctions-image-mobile {
+    display: inherit;
+    width: 370px;
+    height: 370px;
+    background: url('../../assets/images/Mobile_group_mobile.png') no-repeat;
+  }
+
+  .sanctions-description {
+    padding: 0 0 39px 0;
+    h2 {
+      font-size: 28px;
+      line-height: 43px;
+      margin: 42px 37px 35px 21px;
+    }
+    p {
+      padding: 0;
+      margin: 4px 21px 43px 23px;
+    }
+    & .description-part1 {
+      padding: 0;
+    }
+  }
+}

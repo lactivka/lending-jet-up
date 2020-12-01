@@ -32,17 +32,11 @@ function App() {
     }
   }
 
-;
-
   useEffect(() => {
     setTimeout(() => {
       setIsPopup(true);
-    //   setInterval(() => {
-    //   setTimer([timer[0], timer[1], timer[2], timer[3] - 1])
-    // });
     }, TIME_TO_SHOW_POPUP);
-
-  })
+  }, [])
 
   useEffect(() => {
     document.addEventListener('keydown', keyPressHandler)

@@ -3,7 +3,7 @@
 .introduction {
   @extend %bg;
   height: 790px;
-  background: url('../../assets/images/Introduction-bg.jpg');
+  background: url('../../assets/images/Introduction-bg.jpg') no-repeat;
   background-position: 153px 45px;
 }
 
@@ -45,5 +45,44 @@ h1 {
 .introduction-image {
   width: 415px;
   height: 647px;
-  background-image: url('../../assets/images/Mobile_phone_in_hand.png');
+  background: url('../../assets/images/Mobile_phone_in_hand.png') no-repeat;
+}
+
+@media(max-width: 376px) {
+  .introduction {
+    height: 705px;
+    background: url('../../assets/images/Introduction-bg-mobile.jpg') no-repeat;
+  }
+
+  .introduction-content {
+    position: relative;
+    display: block;
+    padding: 37px 0 0 20px;
+  }
+
+  .introduction-info {
+    width: 100%;
+    & .introduction-logo {
+      padding: 0 0 0 9px;
+      img {
+        width: 216px;
+      }
+    }
+  }
+
+  h1 {
+    margin-top: 26px;
+    font-size: 32px;
+    line-height: 110.03%;
+  }
+
+  .introduction-text {
+    display: none;
+  }
+
+  .introduction-image {
+    height: 800px;
+    background-size: 62.7%;
+    margin: -323px 0 0 48px;
+  }
 }

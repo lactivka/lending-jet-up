@@ -49,7 +49,6 @@
 }
 
 .motivation-item {
-  // height: 300px;
   h3 {
     font-size: 18px;
     line-height: 20px;
@@ -92,5 +91,78 @@
   &.notification {
     margin: 0;
     background: url('../../assets/icons/notification.png') no-repeat;
+  }
+}
+
+@media(max-width: 376px) {
+  .motivation {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .motivation-content {
+    h2 {
+      padding: 44px 10px 0 22px;
+      font-size: 28px;
+      line-height: 39px;
+    }
+    & .motivation-description {
+      display: none;
+    }
+    & .motivation-image {
+      width: 224px;
+      height: 204px;
+      margin: 4px 0 0 24px;
+      transform: rotate(270deg);
+      img {
+        width: 277px;
+      }
+    }
+  }
+
+  .motivation-info {
+    flex-wrap: wrap;
+    padding-bottom: 75px;
+  }
+
+  .motivation-list {
+    margin: auto;
+    padding: 71px 24px 0 22px;
+    max-width: 100%;
+    max-height: fit-content;
+    justify-content: center;
+    & .motivation-item {
+      margin-bottom: 38px;
+    }
+  }
+
+  .motivation-icon {
+    &.personal-coach {
+      margin-right: 17px;
+    }
+    &.personalMap {
+      margin-right: 19px;
+      width: 80px;
+      height: 70px;
+      background-size: contain;
+    }
+    &.refereeSanctioning {
+      width: 77px;
+      height: 69px;
+      background-position: -11px -10px;
+    }
+    &.barChart {
+      background-size: contain;
+      width: 56px;
+      margin-right: 20px;
+    }
+    &.notification {
+      background-size: contain;
+      width: 60px;
+      height: 60px;
+      margin-right: 13px;
+      margin-bottom: 4px;
+      background-position: -7px 0px;
+    }
   }
 }

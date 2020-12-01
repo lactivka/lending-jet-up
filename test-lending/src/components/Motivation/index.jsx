@@ -9,8 +9,9 @@ function Motivation() {
         <h2>{motivation.title}</h2>
         <p className="motivation-description">{motivation.text}</p>
         <div className="motivation-info">
-          {/* <div className="motivation-image"></div> */}
-          <img src={motivationImage} alt="Mobile phone" className="motivation-image" />
+          <div className="motivation-image">
+            <img src={motivationImage} alt="Mobile phone" />
+          </div>
           <div className="motivation-list">
             {
               motivation.list.map(item => {

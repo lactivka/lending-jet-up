@@ -108,3 +108,56 @@
     }
   }
 }
+
+@media(max-width: 376px) {
+  .comments {
+    height: auto;
+    background: url('../../assets/images/Comments-bg-mobile.jpg') no-repeat;
+  }
+
+  .comments-content {
+    margin: auto;
+    padding-bottom: 1px;
+    max-width: 1161px;
+    h2 {
+      padding: 66px 20px 0 20px;
+      pre {
+        font-size: 28px;
+        line-height: 42px;
+        padding: 0;
+        white-space: inherit;
+        margin: 0;
+      }
+    }
+    & .comment-block {
+      margin: 36px 20px;
+      padding: 9px 15px;
+      height: auto;
+    }
+  }
+
+  .user-data {
+    & .user-photo {
+      width: 77px;
+      height: 77px;
+      margin: 15px 14px 0 2px;
+    }
+    & .user-name {
+      margin: 20px 0px 0px 3px;
+    }
+    & .user-position {
+      margin: 9px 0 11px 3px;
+    }
+  }
+
+  .comment-text {
+    height: auto;
+    padding: 6px 0 0 5px;
+    margin-bottom: 37px;
+  }
+
+  .switcher {
+    margin: 30px auto;
+    padding: 0px;
+  }
+}

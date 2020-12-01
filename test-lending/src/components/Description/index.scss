@@ -23,3 +23,26 @@
   letter-spacing: -0.02em;
   color: $text-theme-light;
 }
+
+@media(max-width: 376px) {
+  .description {
+    height: auto;
+    background: url('../../assets/images/Description-bg-mobile.jpg') no-repeat;
+  }
+
+  .description-content {
+    flex-direction: column;
+    padding: 75px 0 0 20px;
+  }
+
+  .description-logo {
+    img {
+      width: 134px;
+    }
+  }
+
+  .description-text {
+    padding: 36px 19px 54px 0px;
+    line-height: 25px;
+  }
+}

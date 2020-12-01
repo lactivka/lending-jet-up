@@ -7,6 +7,7 @@ function Sanctions() {
       <div className="sanctions-content">
         <div className="sanctions-description">
           <h2>{sanctions.title}</h2>
+          <div className="sanctions-image-mobile"></div>
           <p className="description-part1">{sanctions.text.part1}</p>
           <p>{sanctions.text.part2}</p>
         </div>

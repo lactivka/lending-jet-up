@@ -15,6 +15,7 @@
 
 .footer-social {
   p {
+    display: inherit;
     padding-left: 7px;
     font-weight: 900;
     font-size: 14px;
@@ -57,4 +58,41 @@
   padding: 3px 0 0 11px;
   width: 30px;
   height: 30px;
+}
+
+@media(max-width: 376px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 18px;
+    flex-direction: column;
+  }
+
+  .footer-social {
+    p {
+      display: none;
+    }
+    & .social-icons {
+      width: 160px;
+    }
+  }
+
+  .footer-address {
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px 16px 0 8px;
+    width: auto;
+    & .address-info {
+      display: flex;
+    }
+    & .placeholder {
+      width: 23px;
+      height: 22px;
+      padding: 7px 18px 0 0px;
+    }
+  }
 }

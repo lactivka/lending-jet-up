@@ -31,3 +31,23 @@
     width: 294px;
   }
 }
+
+@media(max-width: 376px) {
+  .popupForm {
+    display: flex;
+    flex-direction: column;
+    padding: 27px 24px;
+  }
+
+  .form-input {
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .form-button {
+    & .button {
+      position: inherit;
+      max-width: 100%;
+    }
+  }
+}
