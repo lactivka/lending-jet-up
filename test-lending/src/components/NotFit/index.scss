@@ -46,10 +46,11 @@
   background: url('../../assets/images/Lazy.png') no-repeat;
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1200px) {
   .notFit {
     height: auto;
     background: url('../../assets/images/NotFit-bg-mobile.jpg') no-repeat;
+    background-size: cover;
   }
 
   .notFit-content {
@@ -78,5 +79,11 @@
     height: 202px;
     margin: 47px 0 0 23px;
     background-size: contain;
+  }
+}
+
+@media(max-width: 376px) {
+  .notFit {
+    background-size: inherit;
   }
 }

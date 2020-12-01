@@ -32,7 +32,20 @@
   }
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1060px) and (min-width: 601px) {
+  .popupForm {
+    padding: 0px 50px 0 50px;
+  }
+
+  .form-button {
+    & .button {
+      top: 0;
+      right: 26px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
   .popupForm {
     display: flex;
     flex-direction: column;
@@ -47,7 +60,7 @@
   .form-button {
     & .button {
       position: inherit;
-      max-width: 100%;
+      width: 100%;
     }
   }
 }

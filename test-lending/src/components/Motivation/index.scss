@@ -94,7 +94,33 @@
   }
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1300px) and (min-width: 701px) {
+  .motivation {
+    height: auto;
+  }
+
+  .motivation-content {
+    margin: 0 45px;
+    padding-bottom: 65px;
+  }
+
+  .motivation-image {
+    img {
+      width: 400px;
+    }
+  }
+
+  .motivation-list {
+    max-height: none;
+    & .motivation-item {
+      padding-bottom: 30px;
+      padding-right: 10px;
+      margin: auto;
+    }
+  }
+}
+
+@media(max-width: 700px) {
   .motivation {
     height: auto;
     overflow: hidden;

@@ -72,11 +72,29 @@
   }
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1300px) and (min-width: 701px) {
+  .opportunities {
+    height: auto;
+  }
+
+  .opportunities-content {
+    margin: 0 45px;
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .opportunities-list {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 700px) {
   .opportunities {
     height: auto;
     background: url('../../assets/images/Opportunities-bg-mobile.jpg') no-repeat;
     background-position: 3px 14px;
+    background-size: cover;
   }
   .opportunities-content {
     padding-top: 75px;
@@ -131,3 +149,8 @@
   }
 }
 
+@media(max-width: 376px) {
+  .opportunities {
+    background-size: inherit;
+  }
+}

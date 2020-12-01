@@ -3,7 +3,7 @@
 .description {
   @extend %bg;
   height: 454px;
-  background: url('../../assets/images/Description-bg.jpg');
+  background: url('../../assets/images/Description-bg.jpg') no-repeat;
 }
 
 .description-content {
@@ -24,10 +24,22 @@
   color: $text-theme-light;
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1300px) and (min-width: 701px) {
+  .description-content {
+    margin: 0 45px;
+  }
+
+  .description-text {
+    padding-top: 0;
+    padding-left: 25px;
+  }
+}
+
+@media(max-width: 700px) {
   .description {
     height: auto;
     background: url('../../assets/images/Description-bg-mobile.jpg') no-repeat;
+    background-size: cover;
   }
 
   .description-content {

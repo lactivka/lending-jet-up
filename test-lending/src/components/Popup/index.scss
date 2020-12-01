@@ -103,10 +103,41 @@
   }
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1060px) and (min-width: 601px) {
   .popup {
     margin: 122px 20px;
-    max-height: 76.5%;
+  }
+
+  .popup-title {
+    padding-left: 40px;
+  }
+
+  .time-block {
+    margin: 31px 40px 0 40px;
+  }
+
+  .popup-text {
+    padding: 0;
+    margin: 48px 50px;
+  }
+
+  .popup-done {
+    height: auto;
+    margin: 190px 20px;
+    & .popup-text {
+      padding: 0;
+    }
+    button {
+      margin: 0 0 50px 0;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .popup {
+    margin: 122px 20px;
+    height: auto;
+    padding-bottom: 10px;
   }
 
   .popup-title {

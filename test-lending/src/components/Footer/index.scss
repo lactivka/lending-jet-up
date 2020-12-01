@@ -60,7 +60,7 @@
   height: 30px;
 }
 
-@media(max-width: 376px) {
+@media(max-width: 1200px) {
   .footer {
     height: auto;
   }
@@ -68,6 +68,7 @@
   .footer-content {
     padding: 18px;
     flex-direction: column;
+    align-items: baseline;
   }
 
   .footer-social {
