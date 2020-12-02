@@ -1,0 +1,60 @@
+@import '../../constants/constants.scss';
+
+.description {
+  @extend %bg;
+  height: 454px;
+  background: url('../../assets/images/Description-bg.jpg') no-repeat;
+}
+
+.description-content {
+  margin: auto;
+  padding-top: 117px;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-text {
+  max-width: 855px;
+  padding-top: 47px;
+  padding-right: 42px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: $text-theme-light;
+}
+
+@media(max-width: 1300px) and (min-width: 701px) {
+  .description-content {
+    margin: 0 45px;
+  }
+
+  .description-text {
+    padding-top: 0;
+    padding-left: 25px;
+  }
+}
+
+@media(max-width: 700px) {
+  .description {
+    height: auto;
+    background: url('../../assets/images/Description-bg-mobile.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .description-content {
+    flex-direction: column;
+    padding: 75px 0 0 20px;
+  }
+
+  .description-logo {
+    img {
+      width: 134px;
+    }
+  }
+
+  .description-text {
+    padding: 36px 19px 54px 0px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../constants/constants';
+
+.download {
+  @extend %bg;
+  height: 470px;
+  background: url('../../assets/images/Download-bg.jpg');
+}
+
+.download-content {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1257px;
+}
+
+.download-image {
+  margin: -233px 0px 0 -58px;
+}
+
+.download-info {
+  padding-top: 104px;
+  display: flex;
+  flex-direction: column;
+  max-width: 719px;
+  h3 {
+    padding-left: 7px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+    letter-spacing: -0.02em;
+    color: $text-theme-light;
+  }
+  & .download-buttons {
+    display: flex;
+    padding-top: 49px;
+    img {
+      cursor: pointer;
+    }
+  }
+  & .download-button-mobile {
+    display: none;
+  }
+  & .download-button {
+    display: block;
+  }
+}
+
+@media(max-width: 1200px) {
+  .download {
+    height: auto;
+    background: url('../../assets/images/Download-bg-mobile.jpg') no-repeat;
+    background-position: 1px -7px;
+    background-size: cover;
+  }
+
+  .download-image {
+    display: none;
+  }
+
+  .download-info {
+    margin: auto;
+    padding: 38px 14px 0 9px;
+    h3 {
+      margin-bottom: 10px;
+      padding-left: 13px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+    & .download-buttons {
+      padding: 0 0 13px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    & .download-button {
+      display: none;
+    }
+    & .download-button-mobile {
+      display: block;
+      margin-bottom: -8px;
+    }
+  }
+}
+
+@media(max-width: 376px) {
+  .download {
+    background-size: inherit;
+  }
+}

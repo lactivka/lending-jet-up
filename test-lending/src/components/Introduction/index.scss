@@ -1,0 +1,124 @@
+@import '../../constants/constants.scss';
+
+.introduction {
+  @extend %bg;
+  height: 790px;
+  background: url('../../assets/images/Introduction-bg.jpg') no-repeat;
+  background-position: 153px 45px;
+}
+
+.introduction-content {
+  display: flex;
+  max-width: 1142px;
+  margin: auto;
+  padding-top: 143px;
+  padding-right: 45px;
+}
+
+h1 {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: -0.02em;
+    & .colored-header {
+      color: $h1-color;
+    }
+}
+
+.introduction-info {
+  width: 64%;
+  margin-top: 15px;
+}
+
+.introduction-text {
+  max-width: 586px;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: $text-introduction;
+}
+
+.introduction-image {
+  width: 415px;
+  height: 647px;
+  background: url('../../assets/images/Mobile_phone_in_hand.png') no-repeat;
+}
+
+@media(max-width: 1300px) {
+  .introduction {
+    margin-left: 45px;
+  }
+
+  h1 {
+    margin-top: 26px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .introduction-info {
+    width: 55%;
+  }
+}
+
+@media(max-width: 1000px) and (min-width: 601px) {
+  .introduction-logo {
+    width: 216px;
+  }
+
+  h1 {
+    margin-top: 26px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .introduction-image {
+    width: 320px;
+    background-size: contain;
+    background-position: 0 163px;
+  }
+}
+
+@media(max-width: 600px) {
+  .introduction {
+    margin: 0;
+    height: 705px;
+    background: url('../../assets/images/Introduction-bg-mobile.jpg') no-repeat;
+  }
+
+  .introduction-content {
+    width: 375px;
+    position: relative;
+    display: block;
+    padding: 37px 0 0 20px;
+  }
+
+  .introduction-info {
+    width: 100%;
+    & .introduction-logo {
+      padding: 0 0 0 9px;
+      img {
+        width: 216px;
+      }
+    }
+  }
+
+  h1 {
+    margin-top: 26px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .introduction-text {
+    display: none;
+  }
+
+  .introduction-image {
+    height: 800px;
+    background-size: 62.7%;
+    margin: -323px 0 0 48px;
+  }
+}
