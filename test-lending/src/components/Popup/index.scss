@@ -105,7 +105,8 @@
 
 @media(max-width: 1060px) and (min-width: 601px) {
   .popup {
-    margin: 122px 20px;
+    margin: auto 20px;
+    margin-top: calc((100vh - 595px) / 2);
   }
 
   .popup-title {
@@ -135,7 +136,8 @@
 
 @media(max-width: 600px) {
   .popup {
-    margin: 122px 20px;
+    margin: auto 20px;
+    margin-top: calc((100vh - 595px) / 2);
     height: auto;
     padding-bottom: 10px;
   }
